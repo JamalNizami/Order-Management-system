@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended : false}))
 
 app.use('/api/product', require('./routes/productRoute'))
-app.use('/api/cartItem', require('./routes/productRoute'))
+app.use('/api/cartItem', require('./routes/cartItemRoute'))
 
 
 
