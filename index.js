@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended : false}))
 
 app.use('/api/product', require('./routes/productRoute'))
 app.use('/api/cartItem', require('./routes/cartItemRoute'))
-
+app.use('/api/cart', require('./routes/cartRoute'))
 
 
 app.listen(port, () => console.log(`Server start on port ${port}`))
