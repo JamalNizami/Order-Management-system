@@ -1,9 +1,10 @@
 const express = require ('express')
 const router = express.Router()
 
-const {setCart,} = require("../controller/cartController")
+const {setCart,getCart} = require("../controller/cartController")
 
-router.post('/', setCart,)
+// router.post('/', setCart)
+router.get('/', getCart)
 
 
 
