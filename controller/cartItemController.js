@@ -1,12 +1,14 @@
 const express = require ('express')
 const asyncHandler = require('express-async-handler')
 const CartItem = require("../model/cartItemModel")
+const Cart = require('../model/cartModel')
 
 const addCartItems = asyncHandler(async (req, res) => {
 
     // const product = await Product.find(Product._id)
     
     const cartItem = await CartItem.create(req.body)
+    Cart.
 
     res.status(200).json({
         Message : "Items added to cart Successfully" , 
